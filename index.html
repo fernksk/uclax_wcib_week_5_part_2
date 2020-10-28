@@ -4,45 +4,60 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Week 5, Part 2</title>
+    <title>Silly Story Generator</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
   </head>
 
     <body class="text-center">
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="masthead mb-auto">
           <div class="inner">
-            <h3 class="masthead-brand">Cover</h3>
+            <h3 class="masthead-brand">Silly Story Generator</h3>
             <nav class="nav nav-masthead justify-content-center">
               <a class="nav-link active" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Contact</a>
-            </nav>
+              </nav>
           </div>
         </header>
 
+
         <div role="main" class="inner cover">
-          <h1 class="cover-heading">Cover your page.</h1>
-          <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-          <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-          </p>
+          <div>
+        <label for="customname">Enter custom name:</label>
+        <input id="customname" type="text" placeholder="">
+      </div>
+      <div>
+    <label for="customage">Enter age:</label>
+    <input id="customage" type="text" placeholder="">
+  </div>
+
+      <p>Randomly Pick One:</p>
+
+      <div>
+        <label for="us">🗽</label><input id="us" type="radio" name="ukus" value="us" checked>
+        <label for="eu">🗼</label><input id="eu" type="radio" name="ukus" value="eu">
+        <label for="jp">⛩</label><input id="jp" type="radio" name="ukus" value="jp">
+      </div>
+            <a href="#" class="btn btn-lg btn-secondary randomize">See Your Story</a>
+          <p class="story"></p>
         </div>
 
-        <footer class="mastfoot mt-auto">
+
+      <footer class="mastfoot mt-auto">
           <div class="inner">
             <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
           </div>
         </footer>
       </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
+
+
     </body>
   </html>

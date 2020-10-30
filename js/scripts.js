@@ -38,6 +38,10 @@ function result() {
     newStory = newStory.replace('40',age);
   }
 
+  if(document.getElementById("us").checked) {
+  $('body').css('background', '#4f478c');
+  }
+
   if(document.getElementById("eu").checked) {
     const currency = Math.round(300*0.0714286) + ' euro';
     const temperature =  Math.round((94-32) * 5 / 9) + ' celsius';
@@ -45,11 +49,19 @@ function result() {
     newStory = newStory.replace('94 fahrenheit',temperature);
   }
 
+  if(document.getElementById("eu").checked) {
+  $('body').css('background', '#4f878c');
+  }
+
   if(document.getElementById("jp").checked) {
     const currency = Math.round(300*0.0714286) + ' yen';
     const temperature =  Math.round((94-32) * 5 / 9) + ' celsius';
     newStory = newStory.replace('300 dollars',currency);
     newStory = newStory.replace('94 fahrenheit',temperature);
+  }
+
+  if(document.getElementById("jp").checked) {
+  $('body').css('background', '#4f678c');
   }
 
   story.textContent = newStory;

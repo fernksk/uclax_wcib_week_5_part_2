@@ -29,6 +29,7 @@ body {
   height: 100%;
   background-color: #333;
   background-size: 250px;
+  font-family: 'Miriam Libre', sans-serif;
 }
 
 body {
@@ -39,29 +40,49 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-#us {
-  background-repeat: no-repeat;
-background-position: center;
-background-image: url("../images/test.jpg");
-background-attachment: fixed;
+p{
+  font-family: 'Miriam Libre', sans-serif;
+  font-size: 18px;
+  text-shadow: 1px 1px 15px white;
 }
 
-#eu {
-  background-repeat: no-repeat;
-background-position: center;
-background-image: url("../images/eu.jpg");
-background-attachment: fixed;
+label{
+  font-family: 'Miriam Libre', sans-serif;
+  font-size: 18px;
+  text-shadow: 1px 1px 15px white;
 }
 
-#jp {
-  background-repeat: no-repeat;
-background-position: center;
-background-image: url("../images/jp.jpg");
-background-attachment: fixed;
+.hide {
+  display: none;
 }
+
+.eng {
+  background-image: url("../images/london.gif");
+  background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.fr {
+  background-image: url("../images/fr.gif");
+  background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.jp {
+  background-image: url("../images/tokyo.gif");
+  background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
 
 .cover-container {
-  max-width: 42em;
+  max-width: 65em;
 }
 
 

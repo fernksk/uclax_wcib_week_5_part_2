@@ -39,7 +39,7 @@ function result() {
   }
 
   if(document.getElementById("jp").checked) {
-  $('body').css('background', '#4f878c');
+    document.body.className += ' jp';
   }
 
   if(document.getElementById("jp").checked) {
@@ -51,7 +51,7 @@ function result() {
   }
 
   if(document.getElementById("eng").checked) {
-  $('body').css('background', '#4f478c');
+    document.body.className += ' eng';
   }
 
   if(document.getElementById("eng").checked) {
@@ -62,18 +62,36 @@ function result() {
     newStory = newStory.replace('California','London');
   }
 
-  if(document.getElementById("nl").checked) {
-  $('body').css('background', '#4f678c');
+  if(document.getElementById("fr").checked) {
+    document.body.className += ' fr';
   }
 
-  if(document.getElementById("nl").checked) {
+  if(document.getElementById("fr").checked) {
     const currency = Math.round(30*0.858390) + ' euros';
     const temperature =  Math.round((35-32) * 5 / 9) + ' celsius';
     newStory = newStory.replace('30 dollars',currency);
     newStory = newStory.replace('35 fahrenheit',temperature);
-    newStory = newStory.replace('California','Amsterdam');
+    newStory = newStory.replace('California','Paris');
   }
 
   story.textContent = newStory;
   story.style.visibility = 'visible';
+
+}
+
+$(document).ready(function() {
+  $('.randomize').click(function () {
+
+    if($('.randomize').is('click')){
+
+      $('.reset').hide();
+    }
+    else {
+      $('.reset').show();
+    }
+  });
+});
+
+function refreshPage(){
+  window.location.reload();
 }

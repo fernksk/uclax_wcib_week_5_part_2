@@ -1,6 +1,6 @@
 /*
- * Globals
- */
+* Globals
+*/
 
 /* Links */
 a,
@@ -19,17 +19,52 @@ a:hover {
   border: .05rem solid #fff;
 }
 
+.btn-primary {
+  font-size: 18px;
+  color: #fff;
+  background-color: #697184;
+  border-width: 2px;
+  border-color: #fff;
+}
+
+.btn-primary:hover {
+  color: #697184;
+  background-color: #d8cfd0;
+  border-width: 2px;
+  border-color: #d8cfd0;
+}
+
+.btn-secondary {
+  font-size: 18px;
+  color: #fff;
+  background-color: #b1a6a4;
+  border-width: 2px;
+  border-color: #b1a6a4;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #697184;
+  border-width: 2px;
+  border-color: #fff;
+}
+
 
 /*
- * Base structure
- */
+* Base structure
+*/
 
 html,
 body {
   height: 100%;
   background-color: #333;
-  background-size: 250px;
   font-family: 'Miriam Libre', sans-serif;
+  font-size: 22px;
+  background-image: url("../images/hme2.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 body {
@@ -48,8 +83,13 @@ p{
 
 label{
   font-family: 'Miriam Libre', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   text-shadow: 1px 1px 15px white;
+}
+
+input{
+  font-family: 'Miriam Libre', sans-serif;
+  font-size: 18px;
 }
 
 .hide {
@@ -57,27 +97,27 @@ label{
 }
 
 .eng {
-  background-image: url("../images/london.gif");
+  background-image: url("../images/ld.gif");
   background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .fr {
-  background-image: url("../images/fr.gif");
+  background-image: url("../images/bd.gif");
   background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .jp {
   background-image: url("../images/tokyo.gif");
   background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 
@@ -87,8 +127,8 @@ background-size: cover;
 
 
 /*
- * Header
- */
+* Header
+*/
 .masthead {
   margin-bottom: 2rem;
 }
@@ -130,8 +170,8 @@ background-size: cover;
 
 
 /*
- * Cover
- */
+* Cover
+*/
 .cover {
   padding: 0 1.5rem;
 }
@@ -142,8 +182,8 @@ background-size: cover;
 
 
 /*
- * Footer
- */
+* Footer
+*/
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
